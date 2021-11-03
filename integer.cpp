@@ -1,4 +1,7 @@
 #include <cstdlib>
+#include <iostream>
+using namespace std;
+
 // Integer class 
 
 class Integer{
@@ -6,10 +9,9 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
-		int fib(int);
+		int fib();
 	private:
 		int val;
-		int fib(int);
 	};
  
 Integer::Integer(int n){
@@ -36,13 +38,19 @@ int Integer::fib(){
     {
        f[i] = f[i - 1] + f[i - 2];
     }
-    return f[val];    
+    return f[val];
+    
 }
+
+
+
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
 	int Integer_get(Integer* integer) {return integer->get();}
 	void Integer_set(Integer* integer, int n) {integer->set(n);}
+	int Integer_fib(Integer* integer) {return integer->fib();}
+	
 	void Integer_delete(Integer* integer){
 		if (integer){
 			delete integer;
