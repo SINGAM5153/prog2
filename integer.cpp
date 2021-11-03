@@ -40,14 +40,14 @@ int Integer::fib(){
     // }
     // return f[val];
 	if(val==0){
-		return 0
+		return 0;
 	}
 	if(val==1){
-		return 1
+		return 1;
 	}
 	else
 	{
-		return fib(val-1)+fib(val-2)
+		return fib(val-1)+fib(val-2);
 	}
     
 }
