@@ -1,4 +1,9 @@
 """ Python interface to the C++ Integer class """
+""" 
+checked by : 
+checked on : 
+
+"""
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libinteger.so')
 
@@ -15,9 +20,6 @@ class Integer(object):
 		lib.Integer_fib.restype = ctypes.c_int
 		self.obj = lib.Integer_new(val)
 
-		
-
-		
 	def get(self):
 		return lib.Integer_get(self.obj)
 
@@ -27,9 +29,14 @@ class Integer(object):
 	def __del__(self):
 		return lib.Integer_delete(self.obj)
 
-	def fib_py(self,val):
+	def fib(self,val):
+		return lib.Integer_fib(self.obj,val)
+	
+	def fib_py(self, val):
 		n= val
-		if n==1:
+		if n<=1:
 			return n
 		else:
-			return self.fib_py(n-1) + self.fib_py(n-2)
+			return self.fib_py(n-1)+self.fib_py(n-2)
+
+	
