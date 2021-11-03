@@ -4,7 +4,6 @@ checked by :
 checked on : 
 
 """
-from _typeshed import Self
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libinteger.so')
 
