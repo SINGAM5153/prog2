@@ -6,9 +6,10 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
-		int fib(int);
+		int fib();
 	private:
 		int val;
+		int fib();
 	};
  
 Integer::Integer(int n){
@@ -23,17 +24,20 @@ void Integer::set(int n){
 	val = n;
 	}
 
-int Integer::fib(int n){
-	    if (n=0){
-			return 0; 
-		} 
-	    if(n=1) {
-	      return(n);
-	  	 }
-	   else {
-	      return(fib(n-1)+fib(n-2));
-	  	 }
-	}
+int Integer::fib(){
+     
+    int f[val + 1];
+    int i;
+ 
+    f[0] = 0;
+    f[1] = 1;
+ 
+    for(i = 2; i <= val; i++)
+    {
+       f[i] = f[i - 1] + f[i - 2];
+    }
+    return f[val];    
+}
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}

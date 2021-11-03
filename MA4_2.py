@@ -6,11 +6,10 @@ from integer import Integer
 def main():
 	times = []
 	
-	for i in range (30,41):
+	for i in range (30,37):
 		times.append(compare(i))
-	print('end')
-	plt.savefig('cpp_vs_py.png')
-	# print(times)
+	plt.savefig('cpp_vs_python.png')
+	
 def compare(n):
 	f = Integer(n)
 	
