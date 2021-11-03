@@ -33,7 +33,7 @@ def main():
 	xl=[]
 	pl=[]
 	lt=[]
-	for i in range(30,48):
+	for i in range(30,41):
 		lt.append(i)
 	for i in lt:
 		cp=compare(i)
