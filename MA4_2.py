@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-""" 
-checked by : 
-checked on : 
-
+"""
+Student:SIVA SAI NAVEEN SINGAM
+Mail:singamnaveen23@gmail.com
+Reviewed by:sven-erik
+Date reviewed:03/11/2021
 """
 import matplotlib.pyplot	
 from time import perf_counter as pc

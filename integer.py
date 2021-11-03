@@ -1,8 +1,9 @@
-""" Python interface to the C++ Integer class """
-""" 
-checked by : 
-checked on : 
-
+""" Python interface to the C++ Integer class """ 
+"""
+Student:SIVA SAI NAVEEN SINGAM
+Mail:singamnaveen23@gmail.com
+Reviewed by:sven-erik
+Date reviewed:03/11/2021
 """
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libinteger.so')

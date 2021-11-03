@@ -1,3 +1,8 @@
+/*Student:SIVA SAI NAVEEN SINGAM
+Mail:singamnaveen23@gmail.com
+Reviewed by:sven-erik
+Date reviewed:03/11/2021*/
+
 #include <cstdlib>
 #include <iostream>
 using namespace std;
@@ -39,16 +44,6 @@ int Integer::fib(){
        f[i] = f[i - 1] + f[i - 2];
     }
     return f[val];
-	// if(val==0){
-	// 	return 0;
-	// }
-	// if(val==1){
-	// 	return 1;
-	// }
-	// else
-	// {
-	// 	return fib(val-1)+fib(val-2);
-	// }
     
 }
 
