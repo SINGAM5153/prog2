@@ -6,6 +6,7 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
+		int fib(int);
 	private:
 		int val;
 	};
@@ -21,6 +22,15 @@ int Integer::get(){
 void Integer::set(int n){
 	val = n;
 	}
+
+int Integer::fib(int n){
+	     
+	    if((n==1) {
+	      return(n);
+	  	 }
+	   else {
+	      return(fib(n-1)+fib(n-2));
+	  	 }
 
 
 extern "C"{
