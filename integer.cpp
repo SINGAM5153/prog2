@@ -6,10 +6,10 @@ class Integer{
 		Integer(int);
 		int get();
 		void set(int);
-		int fib();
+		int fib(int);
 	private:
 		int val;
-		int fib();
+		int fib(int);
 	};
  
 Integer::Integer(int n){
