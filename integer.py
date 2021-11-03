@@ -4,6 +4,7 @@ checked by :
 checked on : 
 
 """
+from _typeshed import Self
 import ctypes
 lib = ctypes.cdll.LoadLibrary('./libinteger.so')
 
@@ -33,8 +34,8 @@ class Integer(object):
 	def fib(self,val):
 		return lib.Integer_fib(self.obj,val)
 	
-	def fib_py(self):
-		n = self.val
+	def fib_py(self,num=get()):
+		n = num
 		if n<=1:
 			return n
 		else:
