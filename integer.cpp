@@ -31,7 +31,7 @@ int Integer::fib(int n){
 	   else {
 	      return(fib(n-1)+fib(n-2));
 	  	 }
-}
+	}
 
 extern "C"{
 	Integer* Integer_new(int n) {return new Integer(n);}
