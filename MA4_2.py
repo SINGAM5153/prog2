@@ -19,7 +19,7 @@ def compare(n):
 	
 	
 	start_py = pc()
-	fib_py = f.fib_py()
+	fib_py = f.fib_py(n)
 	time_py = pc()-start_py
 	
 	matplotlib.pyplot.plot(n,time_cpp,'ro',n,time_py,'b^')
