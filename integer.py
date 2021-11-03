@@ -19,6 +19,7 @@ class Integer(object):
 		lib.Integer_fib.argtypes = [ctypes.c_void_p,ctypes.c_int]
 		lib.Integer_fib.restype = ctypes.c_int
 		self.obj = lib.Integer_new(val)
+		self.val= val
 
 	def get(self):
 		return lib.Integer_get(self.obj)
@@ -32,8 +33,8 @@ class Integer(object):
 	def fib(self,val):
 		return lib.Integer_fib(self.obj,val)
 	
-	def fib_py(self, val):
-		n= val
+	def fib_py(self):
+		n = self.val
 		if n<=1:
 			return n
 		else:
