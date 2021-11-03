@@ -28,27 +28,27 @@ void Integer::set(int n){
 
 int Integer::fib(){
      
-    // int f[val + 1];
-    // int i;
+    int f[val + 1];
+    int i;
  
-    // f[0] = 0;
-    // f[1] = 1;
+    f[0] = 0;
+    f[1] = 1;
  
-    // for(i = 2; i <= val; i++)
-    // {
-    //    f[i] = f[i - 1] + f[i - 2];
-    // }
-    // return f[val];
-	if(val==0){
-		return 0;
-	}
-	if(val==1){
-		return 1;
-	}
-	else
-	{
-		return fib(val-1)+fib(val-2);
-	}
+    for(i = 2; i <= val; i++)
+    {
+       f[i] = f[i - 1] + f[i - 2];
+    }
+    return f[val];
+	// if(val==0){
+	// 	return 0;
+	// }
+	// if(val==1){
+	// 	return 1;
+	// }
+	// else
+	// {
+	// 	return fib(val-1)+fib(val-2);
+	// }
     
 }
 
