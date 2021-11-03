@@ -4,7 +4,7 @@ checked by :
 checked on : 
 
 """
-import matplotlib.pyplot as plt			
+import matplotlib.pyplot		
 from time import perf_counter as pc
 from integer import Integer
 
@@ -22,7 +22,7 @@ def compare(n):
 	fib_py = f.fib_py(n)
 	time_py = pc()-start_py
 	
-	plt.plot(n,time_cpp,'ro',n,time_py,'b^')
+	matplotlib.pyplot.plot(n,time_cpp,'ro',n,time_py,'b^')
 
 	print(f'Value of {f.get()} fibonacci is {fib_cpp} \t time for C++ fib = {time_cpp} \t time for python = {time_py} \n')
 	return [time_cpp,time_py]
@@ -40,11 +40,11 @@ def main():
 		pl.append(cp[1])
 		times.append(cp)
 
-	plt.pyplot(xl,lt)
-	plt.pyplot(pl,lt)
+	matplotlib.pyplot.pyplot(xl,lt)
+	matplotlib.pyplot.pyplot(pl,lt)
 	print('end')
 	
-	plt.savefig('cpp_vs_py.png')
+	matplotlib.pyplot.savefig('cpp_vs_py.png')
 
 
 
