@@ -8,9 +8,9 @@ class Integer(object):
 		lib.Integer_new.restype = ctypes.c_void_p
 		lib.Integer_get.argtypes = [ctypes.c_void_p]
 		lib.Integer_get.restype = ctypes.c_int
-		lib.Integer_set.argtypes = [ctypes.c_void_p,ctypes.c_int]
-		lib.Integer_delete.argtypes = [ctypes.c_void_p]
-		self.obj = lib.Integer_new(val)
+		#lib.Integer_set.argtypes = [ctypes.c_void_p,ctypes.c_int]
+		#lib.Integer_delete.argtypes = [ctypes.c_void_p]
+		#self.obj = lib.Integer_new(val)
 
 		lib.Integer_fib.argtypes = [ctypes.c_void_p,ctypes.c_int]
 		lib.Integer_fib.restype = ctypes.c_int
