@@ -4,7 +4,7 @@ checked by :
 checked on : 
 
 """
-import matplotlib.pyplot as plt			
+import matplotlib as plt			
 from time import perf_counter as pc
 from integer import Integer
 
