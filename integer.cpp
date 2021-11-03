@@ -25,7 +25,7 @@ void Integer::set(int n){
 
 int Integer::fib(int n){
 	     
-	    if((n=1) {
+	    if(n=1) {
 	      return(n);
 	  	 }
 	   else {
