@@ -4,7 +4,7 @@ checked by :
 checked on : 
 
 """
-import matplotlib.pyplot		
+import matplotlib.pyplot	
 from time import perf_counter as pc
 from integer import Integer
 
@@ -32,7 +32,7 @@ def main():
 	xl=[]
 	pl=[]
 	lt=[]
-	for i in range(30,37):
+	for i in range(30,41):
 		lt.append(i)
 	for i in lt:
 		cp=compare(i)
@@ -40,8 +40,8 @@ def main():
 		pl.append(cp[1])
 		times.append(cp)
 
-	matplotlib.pyplot.pyplot(xl,lt)
-	matplotlib.pyplot.pyplot(pl,lt)
+	matplotlib.pyplot(xl,lt)
+	matplotlib.pyplot(pl,lt)
 	print('end')
 	
 	matplotlib.pyplot.savefig('cpp_vs_py.png')
